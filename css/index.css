@@ -1,0 +1,61 @@
+root { 
+    display: block;
+}
+
+body {
+    background-color:#ffffff;
+    font-family:Sans-serif;
+}
+
+a {
+    text-decoration:none;
+    color:#000000;
+}
+
+input {
+    background-color:#dddddd;
+}
+
+textarea {
+    background-color:#dddddd;
+}
+
+#slideshow {
+  width: 1006px;
+  height: 161px;
+}
+
+.selButton {
+    background-color: #ffffff; /* Green */
+    border: 2px solid #7ba040;
+    border-radius:10px;
+    color: black;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 2px;
+}
+
+.button1 {
+    background-color: #7ba040; /* Green */
+    border: 2px solid #7ba040;
+    border-radius:10px;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 2px;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #7ba040;
+}
