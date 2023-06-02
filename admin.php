@@ -53,7 +53,7 @@ if ($login == 1) {
                 $tmpFile) : null;
         if ($width1 != null && $height1 != null) {
             $image1Type = getPicType($_FILES["image1"]['type']);
-            processPic("$domain/photos", $image1Name . "." . $image1Type,
+            processPic("photos", $image1Name . "." . $image1Type,
                     $tmpFile, 800, 150);
             $p1stmt = $db->prepare(
                     "UPDATE merch SET merchPic1=?, merchPic1Ext=? WHERE id=?");
@@ -72,7 +72,7 @@ if ($login == 1) {
                 $tmpFile) : null;
         if ($width2 != null && $height2 != null) {
             $image2Type = getPicType($_FILES["image2"]['type']);
-            processPic("$domain/photos", $image2Name . "." . $image2Type,
+            processPic("photos", $image2Name . "." . $image2Type,
                     $tmpFile, 800, 150);
             $p2stmt = $db->prepare(
                     "UPDATE merch SET merchPic2=?, merchPic2Ext=? WHERE id=?");

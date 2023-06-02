@@ -13,7 +13,7 @@ if ($login == "1") {
                 $tmpFile) : null;
         if ($width != null && $height != null) {
             $imageType = getPicType($_FILES["image"]['type']);
-            processPic("$domain/photos", $picname . "." . $imageType, $tmpFile,
+            processPic("photos", $picname . "." . $imageType, $tmpFile,
                     800, 150);
         }
         $stmt1 = $db->prepare(
